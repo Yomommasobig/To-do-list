@@ -6,9 +6,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <form action="" class="theme-picker" id="theme-picker">
+            <fieldset>
+                <legend class="visually-hidden">Choose theme</legend>
+                <label for="theme" class="visually-hidden">Pink theme</label>
+                <input type="radio" name="theme" id="pink" checked>
+                <label for="theme" class="visually-hidden">Red theme</label>
+                <input type="radio" name="theme" id="red" >
+                <label for="theme" class="visually-hidden">Orange theme</label>
+                <input type="radio" name="theme" id="orange" >
+                <label for="theme" class="visually-hidden">Green theme</label>
+                <input type="radio" name="theme" id="green" >
+                <label for="theme" class="visually-hidden">Blue theme</label>
+                <input type="radio" name="theme" id="blue" >
+                <label for="theme" class="visually-hidden">Purple theme</label>
+                <input type="radio" name="theme" id="purple" >
+            </fieldset>
+        </form>
+        <button id="menu">⚙️</button>
     <div class="container">
         <div class="todo-app">
-            <h2>To-Do List <img src="images/dancing.gif" alt="icon"></h2>
+            <h2>To-Do List</h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add Your Text">
                 <button id="add">Add</button>
