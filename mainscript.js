@@ -111,12 +111,14 @@ menu.addEventListener("click", () => {
         themePicker.style.display = "block";
         menu.textContent = "X"; // Show gear icon when open
         const sound = new Audio("sounds/open-settings.mp3");
-        sound.volume = 0.5;  
+        sound.volume = 0.5;
+        sound.currentTime = 0.50;  
         sound.play();
     } else {
         themePicker.style.display = "none";
         menu.textContent = "⚙️";  // Show "X" when closed
         const sound = new Audio("sounds/open-settings.mp3");
+        sound.currentTime = 0.50;
         sound.volume = 0.5;  
         sound.play();
     }
